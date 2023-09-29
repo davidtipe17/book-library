@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GeneroController;
+use App\Http\Controllers\LibroController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,5 +19,9 @@ Route::get('/', function () {
 });
 Route::get('/generos', [GeneroController::class, 'index'])->name('genero');
 Route::get('/generos/mostrar/{id}', [GeneroController::class, 'mostrar'])->name('genero.mostrar');
-Route::get('/genero/nuevo', [GeneroController::class, 'nuevo'])->name('genero.nuevo');
+Route::get('/generos/nuevo', [GeneroController::class, 'nuevo'])->name('genero.nuevo');
 Route::post('/genero/guardar', [GeneroController::class, 'guardar'])->name('genero.guardar');
+Route::get('/generos/eliminar/{id}', [GeneroController::class, 'eliminar'])->name('genero.eliminar');
+Route::get('/libros/listar', [LibroController::class, 'index'])->name('libro.index');
+Route::get('/libros/nuevo', [LibroController::class, 'nuevo'])->name('libro.nuevo');
+Route::post('/libros/guardar', [LibroController::class, 'guardar'])->name('libro.guardar');

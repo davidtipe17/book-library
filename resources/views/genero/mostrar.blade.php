@@ -23,7 +23,7 @@
 	<div class="mb-3 row">
     	<div class="col-sm-2"></div>
     	<div class="col-sm-10">
-        	<button class="btn btn-primary">Guardar</button>
+        	<button class="btn btn-primary">Guardarr</button>
     	</div>
 	</div>
 </form>
